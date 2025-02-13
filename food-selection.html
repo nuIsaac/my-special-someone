@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Do You Want to Eat? 🍴</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>What Do You Want to Eat? 🍴</h1>
+        <p class="corny-text">Food is the way to the heart, so pick something delicious! 😋</p>
+        <div class="food-grid">
+            <div class="food-item" data-food="Pizza">
+                <img src="assets/cat eating pizza.png" alt="Pizza">
+                <p>Pizza 🍕</p>
+            </div>
+            <div class="food-item" data-food="Sushi">
+                <img src="assets/sushicat.jfif" alt="Sushi">
+                <p>Sushi 🍣</p>
+            </div>
+            <div class="food-item" data-food="Burger">
+                <img src="assets/evil burgah cat.jfif" alt="Burger">
+                <p>Burger 🍔</p>
+            </div>
+            <div class="food-item" data-food="Pasta">
+                <img src="assets/pastacat.jpeg" alt="Pasta">
+                <p>Pasta 🍝</p>
+            </div>
+        </div>
+        <div class="custom-food-container">
+            <div class="food-item" id="custom-food-item">
+                <img src="assets/side-eye-side-eye-cat.gif" alt="Custom">
+                <p>I mean... you can also pick what you want, I guess...</p>
+            </div>
+        </div>
+        <div id="custom-food-input" style="display: none;">
+            <input type="text" id="custom-food-text" placeholder="Enter your custom food choice...">
+        </div>
+        <button id="confirm-food-btn">Confirm Food Choice</button>
+    </div>
+    <script src="food-selection.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Settled! 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Okay now that we've got this settled...</h1>
+        <p class="large-text">We shall have <span id="selected-food"></span> on <span id="selected-date"></span>.<br>It's decided! 💖</p>
+        <img src="assets/goofycatstare.jfif" alt="Surprise">
+        <p class="final-message">One last thing...<br>Close your eyes<br>and turn around...</p>
+    </div>
+
+    <script>
+        // Get stored values
+        const selectedFood = localStorage.getItem("selectedFood");
+        const selectedDate = new Date(localStorage.getItem("selectedDate")).toLocaleDateString();
+
+        // Display values
+        document.getElementById("selected-food").textContent = selectedFood;
+        document.getElementById("selected-date").textContent = selectedDate;
+
+        // Clear storage and return to start page on refresh
+        window.addEventListener("beforeunload", function() {
+            localStorage.clear();
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
