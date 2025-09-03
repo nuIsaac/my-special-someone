@@ -119,6 +119,12 @@ PRs are welcome for small improvements, bug fixes, or accessibility enhancements
 
 ---
 
+## 🤖 AI Assistance
+Parts of this project (like documentation and some starter code ideas) were created with the help of AI tools (e.g., ChatGPT).  
+All code and content were reviewed, customized, and curated by me.
+
+---
+
 ## 📜 License
 
 No license has been chosen yet. If you want others to reuse this, consider adding an OSS license (e.g., MIT) as `LICENSE` at the repo root.
